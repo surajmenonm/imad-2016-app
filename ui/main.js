@@ -1,10 +1,16 @@
-console.log('Loaded!');
-//change main text to new value
-var element = document.getElementById("main text");
-element.innerHTML = "new value";
+//counter
+var button=document.getElementById('counter');
+var counter=0;
 
-//move madi 
-var img=document.getElementById("img")
-img.onclick =function(){
-  img.style.marginLeft='100px'  
+button.onclick = function(){
+  //make a request
+  
+  //capture response
+  
+  //render variable in span
+  counter= counter+1;
+  var span=document.getElementById('count')
+  span.innerHTML= counter.toString();
+  
+    
 };
